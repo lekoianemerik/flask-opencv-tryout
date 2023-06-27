@@ -1,4 +1,34 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+
+    <body>
+
+        <form action="/show_file" method="POST" enctype="multipart/form-data">
+            <div class="parent">
+                <button class="btn-gradient-1">Threshold</button>
+                <button class="btn-gradient-2">Button Two</button>
+            </div>
+        </form>
+
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="myFile" name="file-uploaded"
+                    value="">
+                <button class="custom-file-button" for="file-uploaded">UPLOAD!</button>
+            </div>
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
+<!--
+<html>
 
 <head>
 
@@ -28,7 +58,7 @@
 
                         <div id="success_alert" class="alert alert-success" role="alert" style="display:none;"></div>
 
-                        <!-- Uploading File -->
+                        
                         <div id="upload_data">
                             <img src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png" alt=""
                                 width="100" class="d-block mx-auto mb-4 rounded-pill">
@@ -51,7 +81,7 @@
                                     id="myFile">Upload Datasets</button>
                             </form>
                         </div>
-                        <!-- End -->
+                        
                         {% if success %}
                                <p style="color:green;">File uploaded successfully</p>
                           <form action="/show_file" target="_blank" >
@@ -83,3 +113,4 @@
 
 
 </html>
+-->

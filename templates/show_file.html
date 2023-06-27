@@ -1,3 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Image Gallery</title>
+    <meta name="description" content="Responsive Image Gallery">
+    <meta name="author" content="Tim Wells">
+
+    <style type="text/css">  </style>
+</head>
+<body>
+  <div id="gallery">
+  
+    {% if image_uploaded %}
+      <img src="{{ original_image }}" alt="User Image"   width="500" >
+      <img src="{{ transformed_image }}" alt="User Image"   width="500" >
+    {% endif %}
+  
+  </div>
+
+  <form action="/" method="GET">
+    <div class="parent">
+      <button class="btn-gradient-2">BACK</button>
+    </div>
+</form>
+ 
+ </body>
+</html>
+
+
+
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,11 +68,6 @@
 
 
 
-  <!--  <div>
-        {{jsonfile}}
-    </div> -->
-
-
 
 
  {% if is_image %}
@@ -67,3 +96,5 @@
     </body>
 
 </html>
+
+  -->
